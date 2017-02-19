@@ -10,3 +10,6 @@ public class ApiRestApplication {
 		SpringApplication.run(ApiRestApplication.class, args);
 	}
 }
+
+
+//Domain driven designer é diferente do padrão de desenho MVC.
