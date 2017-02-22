@@ -1,14 +1,17 @@
 package com.apirest.controllers;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMethod;
+
 
 @RequestMapping("/")
-@RestController
+@Controller
 public class HomeController {
 
-		@RequestMapping
+		@RequestMapping(method = RequestMethod.GET)
 		public String index() {
-			return  "olá mundo";
+			return "index";
 		}
+
 }
